@@ -1,0 +1,425 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    background-color: #1f1f1f;
+}
+
+
+/*//////////// SISTEMA DE IMAGENS DO MAIN*/
+.back-imgmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 600px;
+    padding: 10px;
+}
+#imgmain{
+    width: 650px;
+    height: 450px;
+}
+#back-html{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#text-html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 40px;
+}
+#icon-html{
+    display: flex;
+    justify-content: center;
+    font-size: 280px;
+    color: aqua;
+    width: 100%;
+}
+
+#back-css{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#text-css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    margin-top: 40px;
+}
+#icon-css{
+    display: flex;
+    justify-content: center;
+    font-size: 280px;
+    color: aqua;
+    width: 100%;
+}
+
+
+
+/*//////////// SISTEMA DE TEXTO DO MAIN*/
+.back-textmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 600px;
+    padding: 10px;
+}
+
+#titulo-textmain{
+    display: flex;
+    width: 100%;
+    color:white;
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+#text-textmain{
+    display: flex;
+    width: 100%;
+    color:white;
+    font-size: 19px;
+    margin-top: -290px;
+    padding: 10px;
+    margin-left: 60px;
+    line-height: -190px;
+}
+
+
+
+/*//////////// SISTEMA CARROSSEL DE PRODUTOS*/
+.back-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.back-aulas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom:8px solid #161616;
+    border-top: 8px solid #161616;
+}
+
+#titulo-aulas{
+    padding-left: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+
+/*//////////// BOTÃO CARROSSEL DE PRODUTOS UM*/
+
+.rolagem-video{
+    display: flex;
+    width: 100%;
+}
+
+#back-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    font-size: 30px;
+    color: white;
+    animation: frenteum 2s;
+}
+
+#btn-esquerdo,#btn-direito{
+    cursor: pointer;
+}
+
+#btn-esquerdo{
+    display: none;
+    animation: seta 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes seta {
+    50%{
+        transform: scale(1.5) rotate(180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-esquerdo:hover{
+    color: white;
+}
+
+#btn-direito{
+    display: flex;
+    animation: setadenovo 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes setadenovo {
+    50%{
+        transform: scale(1.5) rotate(-180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-direito:hover{
+    color: #037d97;
+}
+
+
+/*//////////// BOTÃO CARROSSEL DE PRODUTOS DOIS*/
+.rolagem-videodois{
+    display: flex;
+    width: 100%;
+}
+
+#back-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    font-size: 30px;
+    color: white;
+    animation: frenteum 2s;
+}
+
+#btn-esquerdodois,#btn-direitodois{
+    cursor: pointer;
+}
+
+#btn-esquerdodois{
+    display: none;
+    animation: seta 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes seta {
+    50%{
+        transform: scale(1.5) rotate(180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-esquerdodois:hover{
+    color: white;
+}
+
+#btn-direitodois{
+    display: flex;
+    animation: setadenovo 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes setadenovo {
+    50%{
+        transform: scale(1.5) rotate(-180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-direitodois:hover{
+    color: #037d97;
+}
+
+
+/*//////////// BOTÃO CARROSSEL DE PRODUTOS TRÊS*/
+.rolagem-videotres{
+    display: flex;
+    width: 100%;
+}
+
+#back-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    font-size: 30px;
+    color: white;
+    animation: frenteum 2s;
+}
+
+#btn-esquerdotres,#btn-direitotres{
+    cursor: pointer;
+}
+
+#btn-esquerdotres{
+    display: none;
+    animation: seta 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes seta {
+    50%{
+        transform: scale(1.5) rotate(180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-esquerdotres:hover{
+    color: white;
+}
+
+#btn-direitotres{
+    display: flex;
+    animation: setadenovo 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes setadenovo {
+    50%{
+        transform: scale(1.5) rotate(-180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-direitotres:hover{
+    color: #037d97;
+}
+
+
+
+
+/*//////////// BOTÃO CARROSSEL DE PRODUTOS QUATRO*/
+.rolagem-videoquatro{
+    display: flex;
+    width: 100%;
+}
+
+#back-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    font-size: 30px;
+    color: white;
+    animation: frenteum 2s;
+}
+
+#btn-esquerdoquatro,#btn-direitoquatro{
+    cursor: pointer;
+}
+
+#btn-esquerdoquatro{
+    display: none;
+    animation: seta 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes seta {
+    50%{
+        transform: scale(1.5) rotate(180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-esquerdoquatro:hover{
+    color: white;
+}
+
+#btn-direitoquatro{
+    display: flex;
+    animation: setadenovo 2s ease-in-out;
+    animation-fill-mode:both;
+}
+
+@keyframes setadenovo {
+    50%{
+        transform: scale(1.5) rotate(-180deg);   
+    }
+    100%{
+        transform: scale(1.0);
+        color: #037d97;
+    }
+}
+
+#btn-direitoquatro:hover{
+    color: #037d97;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*//////////// ESTILIZAÇÃO DO CARROSSEL DE PRODUTOS*/
+.back-videos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: #161616;
+    overflow-x:hidden;
+    width: 100%;
+    height:300px;
+    margin: 0;
+}
+
+
+
+.animaçao-rolagem{
+    display: flex;
+    animation: frenteum 2s ease-in-out;
+    animation-fill-mode:both;
+    
+}
+
+@keyframes frenteum {
+    100%{
+        margin-left: -3500px;
+    }
+}
+
+#dados-imgvideo{
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+    border: 6px solid #1f1f1f;
+    border-radius: 30px;
+    transition: 2s;
+
+}
+
+#dados-imgvideo:hover{
+    border:6px solid #037d97;
+    transform: scale(1.05);
+}

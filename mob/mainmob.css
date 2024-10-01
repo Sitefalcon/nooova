@@ -1,0 +1,49 @@
+@media (max-width:700px) {
+    .back-imgmain,#back-btn{
+        display: none;
+    }
+    .back-textmain{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        padding: 0;
+    }
+
+    #titulo-textmain{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    #text-textmain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 0;
+        margin-top: -180px;
+        width: 100%;
+        line-height: 35px;
+        padding-left: 20px;
+    }
+
+    .rolagem-video,.rolagem-videodois,.rolagem-videotres,.rolagem-videoquatro{
+        animation: none;
+        overflow-x: scroll;
+    }
+    #dados-imgvideo{
+        margin-left:50px;
+    }
+    .back-aulas{
+        background-color: #1f1f1f;
+    }
+    #btn-vermaismob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: 26px;
+        color: #35b6ae;
+    }
+
+}
