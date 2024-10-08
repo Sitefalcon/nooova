@@ -3,103 +3,346 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
+#titulo-textsectioncursomobile{
+    display: none;
+}
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     width: 95%;
     background-color: #1f1f1f;
+    margin-top: 90px;
 }
 
 
-/*//////////// SISTEMA DE IMAGENS DO MAIN*/
-.back-imgmain{
+
+/*//////////// SISTEMA DE SLIDE DE SECTION*/
+.back-sectioncurso{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
+    width: 100%;
     height: 600px;
+    overflow: hidden;
+}
+
+.mySlides{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--- TEXTO PRINCIPAL ---*/
+.back-textsectioncurso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: none;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgb(31,31,31);
+    background: radial-gradient(circle, rgba(3, 170, 204, 0.071) 2%, rgba(22,22,22,1) 55%);
+}
+#text-textsectioncurso{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    font-size: 23px;
+    word-spacing: 8px;
+    margin-top: 0px;
+    transform: translateY(30px);
+    color: #35b6ae;
+    font-weight: bold;
+    animation: corsubtitulo 2s both ease-in-out;
+    opacity: 10;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#titulo-textsectioncurso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 125px;
+    margin-top: 0px;
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#btn-vercurso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color:#053e47;
+    margin-top: -100px;
+    padding: 10px;
+    font-size: 22px;
+    z-index: 3;
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#btn-vercurso:hover{
+    background-color: #037d97;
+}
+
+/*//////////// SISTEMA MAIN DE BOAS VINDAS*/
+
+.back-bemvindoum{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    padding: 0px;
+}
+#text-bemvindo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #35b6ae;
+    color: white;
+    opacity: 0;
+    animation: corsubtitulobemvindo 2s both ease;
+
+}
+#text-frasebemvindo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    font-size: 25px;
+    margin-top: -15px;
+    padding: 10px;
+
+}
+
+.back-sectionbemvindo{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
     padding: 10px;
 }
-#imgmain{
-    width: 650px;
-    height: 450px;
-}
-#back-html{
+
+.fundo-backbemvindo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
+    width: 360px ;
+    height: 150px;
+    z-index: 2;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-#text-html{
+
+.fundo-backbemvindo:hover{
+    background-color: #053e47;
+    border-radius: 0px;
+}
+
+#backbemvindo-titulo,#backbemvindo-text{
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 35px;
-    color: white;
-    margin-top: 40px;
-}
-#icon-html{
-    display: flex;
-    justify-content: center;
-    font-size: 280px;
-    color: aqua;
+    justify-content: left;
     width: 100%;
+    height: 20%;
+    padding: 10px;
+    padding-left: 30px;
 }
 
-#back-css{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#icon-backbemvindotitulo{
+    font-size: 26px;
 }
-#text-css{
+
+#backbemvindo-titulo{
+    font-size: 22px;
+    font-weight: bold;
+    color: #35b6ae;
+}
+
+#backbemvindo-textbemvindo{
+    font-size: 20px;
+}
+
+
+/*--- ANIMAÇÃO TELA DE BOAS VINDAS ---*/
+#icon-csscurso1bemvindo{
+    font-size: 65px;
+    transform: translateY(-220px) rotate(30deg);
+    opacity: 10;
+    animation: opacidadeicon 2s both ease-in-out;
+    transition: 2s;
+}
+
+#icon-csscurso2bemvindo{
+    color: #35b6ae;
+    font-size: 65px;
+    transform: translateY(70px) translateX(-110px) rotate(-30deg);
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#icon-csscurso3bemvindo{
+    color: #35b6ae;
+    font-size: 65px;
+    transform: translateY(70px) translateX(110px) rotate(30deg);
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#icon-csscurso4bemvindo{
+    font-size: 65px;
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+    transform: translateY(-210px) translateX(52px) rotate(-30deg);
+}
+#icon-csssubicon1bemvindo{
+    font-size: 25px;
+    color: #037d97;
+    animation: opacidadeicon 2s both ease-in-out;
+    transform: translateY(-165px) translateX(115px) rotate(30deg);   
+    opacity: 10; 
+}
+#icon-csssubicon2bemvindo{
+    font-size: 25px;
+    color: #037d97;
+    transform: translateY(-165px) translateX(-115px) rotate(-28deg);  
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;  
+}
+
+/*--- ANIMAÇÃO DE ICONES ---*/
+@keyframes opacidadeicon {
+
+    100%{
+        opacity: 10;
+    }
+}
+
+@keyframes corsubtitulobemvindo {
+    50%{
+        background-color: #053e47;
+    }
+    100%{
+        opacity: 10;
+        color: white;
+        background-color: #037d97;
+    }
+}
+
+
+.bolha-direction{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
-    color: white;
-    margin-top: 40px;
+    width: 95%;
+    position: absolute;
+    overflow-x: hidden;
+    transform: translateY(570px);
 }
-#icon-css{
+.fundo-bolha{
     display: flex;
-    justify-content: center;
-    font-size: 280px;
-    color: aqua;
-    width: 100%;
-}
-
-
-
-/*//////////// SISTEMA DE TEXTO DO MAIN*/
-.back-textmain{
-    display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    width: 40%;
+    width: 12%;
+}
+
+
+/*//////////// SISTEMA DE ANIMAÇÃO DE ICONES*/
+.back-animaiconecurso{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 95%;
     height: 600px;
-    padding: 10px;
+    position: absolute;
 }
 
-#titulo-textmain{
-    display: flex;
-    width: 100%;
-    color:white;
-    font-size: 35px;
-    padding: 10px;
-    margin-left: 60px;
+#icon-csscurso1{
+    font-size: 65px;
+    transform: translateY(-120px) rotate(30deg);
+    opacity: 10;
+    animation: opacidadeicon 2s both ease-in-out;
+}
+#icon-csscurso2{
+    color: #35b6ae;
+    font-size: 65px;
+    transform: translateY(90px) translateX(-110px) rotate(-30deg);
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#icon-csscurso3{
+    color: #35b6ae;
+    font-size: 65px;
+    transform: translateY(90px) translateX(110px) rotate(30deg);
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+}
+#icon-csscurso4{
+    font-size: 65px;
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;
+    transform: translateY(-130px) translateX(52px) rotate(-30deg);
+}
+#icon-csssubicon1{
+    font-size: 45px;
+    color: #037d97;
+    transform: translateY(-175px) translateX(115px) rotate(30deg);   
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10; 
+}
+#icon-csssubicon2{
+    font-size: 45px;
+    color: #037d97;
+    transform: translateY(-175px) translateX(-115px) rotate(-28deg);  
+    animation: opacidadeicon 2s both ease-in-out;
+    opacity: 10;  
 }
 
-#text-textmain{
-    display: flex;
-    width: 100%;
-    color:white;
-    font-size: 19px;
-    margin-top: -290px;
-    padding: 10px;
-    margin-left: 60px;
-    line-height: -190px;
+/*--- ANIMAÇÃO DE ICONES ---*/
+@keyframes opacidadeicon {
+    50%{
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100%{
+        transform: 1.0;
+    }
 }
+
+@keyframes corsubtitulo {
+    50%{
+        color: #053e47;
+        opacity: 0;
+    }
+    100%{
+        opacity: 10;
+        color: #037d97;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
